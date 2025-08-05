@@ -13,6 +13,7 @@
 <script src="./threejs/loaders/GLTFLoader.js"></script>
 <script src="./dat-gui/dat.gui.min.js"></script>
 <script src="./dat-gui_panel.js"></script>
+<script src="clipping_plane.js"></script>
 </head>
 <body>
 <div id="view">
@@ -124,6 +125,7 @@ app.loadSceneFile("./data/Volume_Scene/scene.js", function (scene) {
         zMax = undefined;
     gui.dat.initCustomPlaneFolder(zMin, zMax);
   }
++ clippingPlane.boot();
 });
 </script>
 </body>
